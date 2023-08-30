@@ -5,17 +5,14 @@ import "./Navbar.css"
 const Navbar = () => {
     return (
         <div className="Navbar">
-            <h1>You<span>Tube</span></h1>
-            <ul>
-                <li>
-                    <Link to="/">Home</Link>
-                </li>
-                <li>
-                    <Link to="/About">About</Link>
-                </li>
-            </ul>
+            <header>
+                <h1><span>YouTube</span></h1>
+
+            </header>
         </div>
-    );
+
+    )
 }
+    
 
 export default Navbar;
