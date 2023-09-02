@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import Searchbar from "./Searchbar";
 
 import reactLogo from "/src/assets/react.svg";
 import viteLogo from "/public/vite.svg";
@@ -11,6 +12,7 @@ const Home = () => {
 
   return (
     <>
+        <Searchbar/>
       <div>
         <a href="https://vitejs.dev" target="_blank">
           {/* <img src={viteLogo} className="logo" alt="Vite logo" /> */}
