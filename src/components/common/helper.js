@@ -7,7 +7,7 @@ const getSearchResults = (query) => {
     // console.log(query, URL)
     fetch(`${BASE_URL}/search?q=${query}&part=snippet&key=${URL}`)
     .then(res => res.json())
-    .catch(err => console.err(err))
+    .catch(err => console.error(err))
 }
 
 
