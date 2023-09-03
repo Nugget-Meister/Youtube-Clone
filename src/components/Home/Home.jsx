@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
 import Searchbar from "./Searchbar";
 
@@ -8,12 +8,20 @@ import viteLogo from "/public/vite.svg";
 
 const Home = () => {
 
-    const [count, setCount] = useState(0);
+    const [resultState, updateResultState] = useState([]);
 
+    useEffect(() => {
+        console.log("state updated: ", resultState)
+    }, [resultState])
+
+    
   return (
     <>
-        <Searchbar/>
+        <Searchbar updateResultState={updateResultState}/>
       <div>
+        <div>
+            {String(resultState)}
+        </div>
         <a href="https://vitejs.dev" target="_blank">
           {/* <img src={viteLogo} className="logo" alt="Vite logo" /> */}
         </a>
@@ -23,9 +31,6 @@ const Home = () => {
       </div>
       <h1>Vite + React</h1>
       <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
         <p>
           Edit <code>src/App.jsx</code> and save to test HMR
         </p>

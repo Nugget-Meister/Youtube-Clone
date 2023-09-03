@@ -16,13 +16,14 @@ const Searchbar = ({updateResultState}) => {
 
     const handleSubmit = (e) => {
         e.preventDefault()
+
+        // let result = getSearchResults(searchQuery)
+        
         console.log(searchQuery)
+        // console.log(result)
         
         if(updateResultState){
-            let result = getSearchResults(searchQuery)
-    
-            console.log(result)
-            updateResultState(result)
+            updateResultState(getSearchResults(searchQuery))
         } else {
             console.error("Result state has not been passed validly.")
         }
