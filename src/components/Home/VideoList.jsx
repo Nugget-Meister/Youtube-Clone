@@ -1,14 +1,11 @@
 import React, {useState} from 'react';
 
 
-
-const VideoList = () => {
-
+const VideoList = ({ resultState }) => {
 
     return (
         <div>
-            {videos.map((video) => {
-                <h3>{video}</h3>
+            {resultState.map((item) => {
             })}
         </div>
     );
