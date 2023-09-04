@@ -15,7 +15,7 @@ const Home = () => {
         console.log("state updated: ", resultState)
     }, [resultState])
 
-    
+        
   return (
     <>
         <Searchbar updateResultState={updateResultState}/>
@@ -39,7 +39,7 @@ const Home = () => {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
-      <VideoList/>
+      <VideoList resultState={resultState}/>
     </>
   );
 };
