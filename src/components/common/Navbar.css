@@ -1,20 +1,10 @@
-.Navbar {
-    display: grid;
-}
+.nav-box {
+    text-align: center;
+    border: 1px solid gray;
+    background-color: red;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    }
 
-.Navbar h1 {
-    width: 150px;
-}
 
-.Navbar ul {
-    display: inline;
-    display: block;
-    list-style: none;
-}
-
-li {
-    display: block;
-    color: red;
-    float: left;
-    padding: 10px;
-}
