@@ -1,9 +1,9 @@
 import React from "react";
 import { useState } from "react";
+import VideoList from "./VideoList";
 
 import reactLogo from "/src/assets/react.svg";
 import viteLogo from "/public/vite.svg";
-
 
 const Home = () => {
 
@@ -31,8 +31,10 @@ const Home = () => {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
+      <VideoList/>
     </>
   );
 };
+
 
 export default Home;
