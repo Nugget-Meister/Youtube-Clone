@@ -8,7 +8,6 @@ const About = () => {
     return (
         <div className="About">
             <div className="About-message">
-                <h2>About</h2>
                 <div className="p-wrapper">
                     <p>
                       Welcome,this is our YouTube clone project. Using keywords the user can search for any video similar to YouTube. This app is created by <strong>Keith Camacho</strong>,{" "} <strong>Genesis Lara</strong>, and{" "}
@@ -17,9 +16,28 @@ const About = () => {
                 </div>
             </div>
             <div>
-                <div className="card-kc">
+                <div className="kc-card">
                     <img src={kc} />
+                    <div className="kc-container">
+                        <h2>Keith Camacho</h2>
+                        <p>
+                        Bio:{" "} 
+                        </p>
+                        <a href="https://github.com/Nugget-Meister ">GitHub</a>
+                    </div>
+
+                    <div className="gl-card">
                     <img src={gl} />
+                    <div className="gl-container">
+                        <h2>Genesis Lara</h2>
+                        <p>
+                            Bio:{" "}
+                        </p>
+                        
+                    </div>
+                    </div>
+                    
+
                     <img src={je} />
                     
 

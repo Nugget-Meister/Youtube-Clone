@@ -1,10 +1,46 @@
 .nav-box {
-    text-align: center;
+    text-align: left;
     border: 1px solid gray;
     background-color: red;
     color: white;
     display: flex;
     flex-direction: row;
     }
+  
+  .list-item {
+    padding: 0 10px 0 10px;
+    text-align: justify;
+  }
+  
+  .list-item:hover {
+    cursor: pointer;
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: left;
+    list-style: none;
+    font-size: 20px;
+  }
+  
+  span {
+    font-weight: 500;
+    cursor: pointer;
+    align-items: left;
+    padding: 10px;
+  }
+
+  .navbar a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .site-title {
+    font-weight: bold;
+  }
+
+  ul {
+    list-style: none;
+  }
 
 

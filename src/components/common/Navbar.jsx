@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-//import "./Navbar.css"
+import "./Navbar.css"
 
 const Navbar = () => {
     return (
@@ -8,7 +8,7 @@ const Navbar = () => {
           <header>
             <ul className="nav-bar">
               <li className="site-title">
-                <Link to="/"><h1>YouTube</h1></Link>
+                <Link to="/"><h2>YouTube</h2></Link>
               </li>
               <li className="list-item">
                 <Link to="/">Home</Link>
