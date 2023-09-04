@@ -1,9 +1,47 @@
 import React from 'react';
+import { useState } from 'react';
 
-const Searchbar = () => {
+import { getSearchResults } from '../common/helper';
+
+/**
+ * 
+ * @param {*} updateResultState - pass through the function here to update the state for our search results
+ * @returns 
+ */
+
+
+const Searchbar = ({updateResultState}) => {
+
+    const [ searchQuery, updateSearchQuery ] = useState('')
+
+    const handleSubmit = (e) => {
+        e.preventDefault()
+
+        // let result = getSearchResults(searchQuery)
+        
+        console.log(searchQuery)
+        // console.log(result)
+        
+        if(updateResultState){
+            updateResultState(getSearchResults(searchQuery))
+        } else {
+            console.error("Result state has not been passed validly.")
+        }
+    }
+    
+    const handleTextChange = (e) => {
+        updateSearchQuery(e.target.value)
+    }
+
     return (
         <div>
-            
+                <form onSubmit={handleSubmit}>
+                    <input 
+                        type="text" 
+                        value={searchQuery}
+                        onChange={handleTextChange}/>
+                    <input type="submit"/>
+                </form>
         </div>
     );
 }
