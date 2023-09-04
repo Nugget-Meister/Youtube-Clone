@@ -17,8 +17,7 @@ const VideoList = ({ resultState }) => {
 
     return (
         <div>
-            {resultState.map((item) => {
-            })}
+            {resultState.map((item) => {<VideoCard video= {item}/>})}
         </div>
     );
 }
