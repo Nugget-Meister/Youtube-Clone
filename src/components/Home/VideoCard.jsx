@@ -1,9 +1,9 @@
 import React from 'react';
 
-const VideoCard = () => {
+const VideoCard = ({ video }) => {
     return (
-        <div>
-            
+        <div className="videoCard">
+            <h3> {video.title} </h3>
         </div>
     );
 }
