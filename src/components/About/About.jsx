@@ -10,7 +10,7 @@ const About = () => {
             <div className="About-message">
                 <div className="p-wrapper">
                     <p>
-                      Welcome,this is our YouTube clone project. Using keywords the user can search for any video similar to YouTube. This app is created by <strong>Keith Camacho</strong>,{" "} <strong>Genesis Lara</strong>, and{" "}
+                      Welcome, this is our YouTube clone project. Using keywords the user can search for any video similar to YouTube. This app is created by <strong>Keith Camacho</strong>,{" "} <strong>Genesis Lara</strong>, and{" "}
                       <strong>James Edmond</strong>.
                     </p>
                 </div>
@@ -21,27 +21,36 @@ const About = () => {
                     <div className="kc-container">
                         <h2>Keith Camacho</h2>
                         <p>
-                        Bio:{" "} 
+                            Bio:{" "} 
                         </p>
                         <a href="https://github.com/Nugget-Meister ">GitHub</a>
                     </div>
-
-                    <div className="gl-card">
+                </div>
+                <div className="gl-card">
                     <img src={gl} />
                     <div className="gl-container">
                         <h2>Genesis Lara</h2>
                         <p>
                             Bio:{" "}
                         </p>
-                        
+                        <a href="https://github.com/gen329">GitHub</a>
                     </div>
-                    </div>
-                    
-
-                    <img src={je} />
-                    
-
                 </div>
+
+                <div className="je-card">
+                    <img src={je} />
+                    <div className="je-container">
+                        <h2>James Edmond</h2>
+                        <p>
+                            Bio:{" "}
+                        </p>
+                        <a href="https://github.com/jed161 ">GitHub</a>
+                    </div>
+                </div>   
+                    
+                    
+
+                
             </div>
         </div>
     );
