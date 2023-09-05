@@ -1,13 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
-
 import { getSearchResults } from '../common/helper';
 
-/**
- * 
- * @param {*} updateResultState - pass through the function here to update the state for our search results
- * @returns 
- */
 
 
 const Searchbar = ({updateResultState}) => {
