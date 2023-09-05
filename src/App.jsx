@@ -7,11 +7,11 @@ import Home from "./components/Home/Home";
 import About from "./components/About/About";
 import Show from "./components/Show/Show";
 
-//import "./App.css";
+import "./App.css";
+import VideoList from "./components/Home/VideoList";
+
 
 function App() {
-
-
   return (
     <>
       <div className="wrapper">

@@ -1,9 +1,17 @@
 import React from 'react';
+import Video from './Video';
+import CommentSection from './CommentSection';
+
+import { useParams } from 'react-router-dom';
 
 const Show = () => {
+
+let {id} = useParams()
+
     return (
-        <div>
-            
+        <div className='Show'>
+            <Video/>
+            <CommentSection/>
         </div>
     );
 }

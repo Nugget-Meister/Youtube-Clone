@@ -1,9 +1,12 @@
-import React from 'react';
+import React, {useState} from 'react';
+import VideoCard from './VideoCard';
 
-const VideoList = () => {
+
+const VideoList = ({ resultState }) => {
+
     return (
-        <div>
-            
+        <div className="videoList">
+            {resultState.map((item) => {return (<VideoCard video= {item}/>)})}
         </div>
     );
 }
