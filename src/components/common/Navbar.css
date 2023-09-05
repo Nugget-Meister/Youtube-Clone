@@ -3,13 +3,14 @@
     border: 1px solid gray;
     background-color: red;
     color: white;
-    display: flex;
+    display: inline-flexbox;
     flex-direction: row;
+    padding: none;
     }
   
   .list-item {
     padding: 0 10px 0 10px;
-    text-align: justify;
+    display: inline-flex;
   }
   
   .list-item:hover {
@@ -22,25 +23,48 @@
     list-style: none;
     font-size: 20px;
   }
-  
-  span {
-    font-weight: 500;
-    cursor: pointer;
-    align-items: left;
-    padding: 10px;
+
+  .site-title a:link {
+    color: white;
+    text-decoration: none;
   }
 
-  .navbar a {
-    text-decoration: none;
+  .site-title a:visited {
     color: white;
+  }
+
+  .site-title a:hover {
+    color: hotpink;
+  }
+
+  .site-title a:active {
+    color: blue;
+  }
+
+  .list-item a:link {
+    color: white;
+  }
+
+  .list-item a:visited {
+    color: white;
+  }
+
+  .list-item a:hover {
+    color: hotpink;
+  }
+
+  .list-item a:active {
+    color: blue;
   }
   
   .site-title {
     font-weight: bold;
-  }
-
-  ul {
     list-style: none;
+    display: inline-flex;
+    padding: 10px;
   }
 
+  
+
+  
 

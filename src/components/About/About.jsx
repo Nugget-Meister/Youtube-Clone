@@ -10,7 +10,7 @@ const About = () => {
             <div className="About-message">
                 <div className="p-wrapper">
                     <p>
-                      Welcome, this is our YouTube clone project. Using keywords the user can search for any video similar to YouTube. This app is created by <strong>Keith Camacho</strong>,{" "} <strong>Genesis Lara</strong>, and{" "}
+                      Welcome, this is our YouTube clone project. Using keywords, the user can search for any video similar to YouTube. This app is created by <strong>Keith Camacho</strong>,{" "} <strong>Genesis Lara</strong>, and{" "}
                       <strong>James Edmond</strong>.
                     </p>
                 </div>
