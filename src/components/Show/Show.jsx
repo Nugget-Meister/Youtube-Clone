@@ -9,8 +9,8 @@ const Show = () => {
 let {id} = useParams()
 
     return (
-        <div>
-            <Video id={id}/>
+        <div className='Show'>
+            <Video/>
             <CommentSection/>
         </div>
     );
