@@ -43,6 +43,7 @@
 
   .list-item a:link {
     color: white;
+    text-decoration: none;
   }
 
   .list-item a:visited {
