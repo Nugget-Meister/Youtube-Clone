@@ -1,20 +1,71 @@
-.Navbar {
-    display: grid;
-}
-
-.Navbar h1 {
-    width: 350px;
-}
-
-.Navbar ul {
-    display: inline;
-    display: block;
+.nav-box {
+    text-align: left;
+    border: 1px solid gray;
+    background-color: red;
+    color: white;
+    display: inline-flexbox;
+    flex-direction: row;
+    padding: none;
+    }
+  
+  .list-item {
+    padding: 0 10px 0 10px;
+    display: inline-flex;
+  }
+  
+  .list-item:hover {
+    cursor: pointer;
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: left;
     list-style: none;
-}
+    font-size: 20px;
+  }
 
-li {
-    display: block;
-    color: red;
-    float: left;
+  .site-title a:link {
+    color: white;
+    text-decoration: none;
+  }
+
+  .site-title a:visited {
+    color: white;
+  }
+
+  .site-title a:hover {
+    color: hotpink;
+  }
+
+  .site-title a:active {
+    color: blue;
+  }
+
+  .list-item a:link {
+    color: white;
+    text-decoration: none;
+  }
+
+  .list-item a:visited {
+    color: white;
+  }
+
+  .list-item a:hover {
+    color: hotpink;
+  }
+
+  .list-item a:active {
+    color: blue;
+  }
+  
+  .site-title {
+    font-weight: bold;
+    list-style: none;
+    display: inline-flex;
     padding: 10px;
-}
+  }
+
+  
+
+  
+
