@@ -4,7 +4,7 @@ const BASE_URL = "https://youtube.googleapis.com/youtube/v3"
 const getMovie = () => {}
 
 const getSearchResults = (query) => {
-    return fetch(`${BASE_URL}/search?q=${query}&part=snippet&key=${URL}`)
+    return fetch(`${BASE_URL}/search?q=${query}&part=snippet&maxResults=8&key=${URL}`)
     .then(res => res.json())
     .then(json => json.items) 
     // .then(items => console.log(items))
