@@ -18,8 +18,10 @@ const CommentSection = () => {
     
     return (
         <div className='commentSection'>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} className='submitComment'>
+                <h3>Name:</h3>
                 <input type="text" id="name" />
+                <h3>Comment:</h3>
                 <input type="text" id="comment" />
                 <input type="submit" />
             </form>;
