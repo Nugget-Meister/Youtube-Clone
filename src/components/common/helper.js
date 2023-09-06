@@ -3,8 +3,8 @@ const BASE_URL = "https://youtube.googleapis.com/youtube/v3"
 
 const getMovie = () => {}
 
-const getSearchResults = (query) => {
-    return fetch(`${BASE_URL}/search?q=${query}&part=snippet&maxResults=8&key=${URL}`)
+const getSearchResults = (query,maxResults) => {
+    return fetch(`${BASE_URL}/search?q=${query}&part=snippet&maxResults=${maxResults || 8}&key=${URL}`)
     .then(res => {
         let code = res.status
         if(code == 200){
