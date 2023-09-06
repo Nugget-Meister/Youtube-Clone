@@ -7,21 +7,23 @@ import "/src/components/About/About.css";
 const About = () => {
     return (
         <div className="About">
-                    <p>
-                      Welcome, this is our YouTube clone project. Using keywords, the user can search for any video similar to YouTube. This app is created by <strong>Keith Camacho</strong>, <strong>Genesis Lara</strong>, and
-                      <strong>James Edmond</strong>.
-                    </p>
-            <div>
-                <div className="kc-card">
+            <div className="description">
+                <span>
+                    Welcome, this is our YouTube clone project <strong>TouYube</strong>. Using keywords, the user can search for any video similar to YouTube. This app is created by <strong>Keith Camacho</strong>, <strong>Genesis Lara</strong>, and 
+                    <strong> James Edmond</strong>.
+                </span>
+            </div>
+            <div className="cards">
+                <div className="kc-card card">
                     <img src={kc} />
                         <h2>Keith Camacho</h2>
                         <p>
-                             My name is Keith and I like cheese and coffee. 
+                             My name is Keith. I like cheese. 
                         </p>
                         <a href="https://github.com/Nugget-Meister ">GitHub</a>
                 </div>
                 
-                <div className="gl-card">
+                <div className="gl-card card">
                     <img src={gl} />
                         <h2>Genesis Lara</h2>
                         <p>
@@ -30,7 +32,7 @@ const About = () => {
                         <a href="https://github.com/gen329">GitHub</a>
                 </div>
 
-                <div className="je-card">
+                <div className="je-card card">
                     <img src={je} />
                         <h2>James Edmond</h2>
                         <p>
