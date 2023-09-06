@@ -7,7 +7,7 @@ import "/src/components/Home/Searchbar.css"
 const Searchbar = ({updateResultState}) => {
     const [ searchQuery, updateSearchQuery ] = useState({
         search: "",
-        amount: "",
+        amount: "4",
     })
 
     const [ errorFound, updateErrorFound ] = useState({
