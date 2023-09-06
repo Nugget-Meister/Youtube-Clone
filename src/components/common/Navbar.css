@@ -1,20 +1,25 @@
 .Navbar {
-    display: grid;
+    display: flex;
+
 }
 
-.Navbar h1 {
-    width: 350px;
+.Title {
+    width: 250px;
+    padding: 5px;
+    color: black;
+    font-size: 3.2em;
+    line-height: 1.1;
+    text-align: center;
+
 }
 
 .Navbar ul {
-    display: inline;
-    display: block;
     list-style: none;
+    width: 500px
 }
 
 li {
-    display: block;
-    color: red;
+    /* display: block; */
     float: left;
     padding: 10px;
 }
