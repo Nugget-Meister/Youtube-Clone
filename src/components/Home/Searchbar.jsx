@@ -5,13 +5,13 @@ import "/src/components/Home/Searchbar.css"
 
 
 const Searchbar = ({updateResultState}) => {
-
     const [ searchQuery, updateSearchQuery ] = useState('')
+
     const [ errorFound, updateErrorFound ] = useState({
         isError: false,
         errorCode: 0
     })
-
+    
     const handleSubmit = (e) => {
         e.preventDefault()
         if(updateResultState){
