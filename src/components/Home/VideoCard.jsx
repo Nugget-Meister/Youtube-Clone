@@ -8,12 +8,11 @@ const VideoCard = ({ video }) => {
 let videoId = video.id.videoId
 
     return (
-        <div className="videoCard">
+        <div className="VideoCard">
             <Link to={`/Show/${videoId}`}>
                 <img src= {video.snippet.thumbnails.default.url}/>
             </Link>
             <h3>{video.snippet.title} </h3>
-            <p>id: {videoId}</p>
             <p>channel title: {video.snippet.channelTitle} </p>
         </div>
     );
