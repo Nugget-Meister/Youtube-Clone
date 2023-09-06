@@ -1,20 +1,30 @@
-
 .VideoList {
-
+    columns: 2;
+    width: 80%;
+    padding: 40px;
 }
 
 .VideoCard {
-
+    
 }
 
 .VideoCard img {
-    
+    width: 350px;
 }
 
 .VideoCard h3 {
-
+    display: inline-flex ;
+    border-radius: 25px;
+    background-color: white;
+    width: 350px;
+    /* height: 50px; */
+    color: black;
+    font-size: auto;
+    padding: 10px;
+    text-align: center;
+   
 }
 
 .VideoCard p {
-    
+    color: black;
 }
