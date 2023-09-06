@@ -9,6 +9,10 @@
     border-radius: 20px;
 }
 
+.error h1 {
+    font-size: 2em;
+    margin: 20px;
+}
 .searchpls {
     border-radius: 20px;
     background-color: gray;
@@ -18,10 +22,6 @@
     justify-content: center;
 }
 
-.error h1 {
-    font-size: 2em;
-    margin: 20px;
-}
 
 .Searchbar form{
     display: flex;
@@ -37,6 +37,7 @@
     border-radius: 25px;
     width: 440px;
     padding: 20px;
+    background-color: white;
 }
 .Searchbar form input[type=number]{
     font-size: 12pt;
@@ -50,7 +51,6 @@
 }
 
 .Searchbar form input:focus {
-    /* color: red; */
     border: none;
     outline: none;
 }

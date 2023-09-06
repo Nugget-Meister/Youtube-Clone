@@ -1,10 +1,11 @@
 import React, {useState} from 'react';
 import VideoCard from './VideoCard';
+import "/src/components/Home/VideoList.css"
 
 
 const VideoList = ({ resultState }) => {
 
-    console.log(resultState.length > 0)
+    // console.log(resultState.length > 0)
     return (
         <div className="videoList">
             {
