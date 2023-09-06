@@ -1,0 +1,36 @@
+.Searchbar {
+    display: grid;
+    /* display: flex; */
+    justify-content: center;
+}
+
+
+
+.Searchbar form{
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    background-color:white;
+    border-radius: 25px;
+}
+
+.Searchbar form input[type="text"] {
+    width:auto;
+    border:none;
+    border-radius: 25px;
+    width: 440px;
+    padding: 20px;
+}
+
+.Searchbar form input[type="text"]:focus {
+    /* color: red; */
+    border: none;
+    outline: none;
+}
+
+.Searchbar form input[type="submit"] {
+    width: 50px;
+    border-radius: 15px;
+    border: none;
+    background-color: rgba(0,0,0,0)
+}

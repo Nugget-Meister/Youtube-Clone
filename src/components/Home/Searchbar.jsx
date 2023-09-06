@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import { getSearchResults } from '../common/helper';
-
+import "/src/components/Home/Searchbar.css"
 
 
 const Searchbar = ({updateResultState}) => {
@@ -14,9 +14,6 @@ const Searchbar = ({updateResultState}) => {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-
-        // console.log(searchQuery)
-        
         if(updateResultState){
             getSearchResults(searchQuery)
             .then((response) => {
@@ -41,19 +38,24 @@ const Searchbar = ({updateResultState}) => {
     }
 
     return (
-        <div>
+        <div className='Searchbar'>
                 <form onSubmit={handleSubmit}>
                     <input 
                         type="text" 
                         value={searchQuery}
-                        onChange={handleTextChange}/>
-                    <input type="submit"/>
+                        onChange={handleTextChange}
+                        placeholder='Search'
+                        required/>
+                    <input type="submit" value="🔎"/>
                 </form>
+                <br />
                 {errorFound.isError ? (
-                <div className='error'>
-                    <h1>An error has occurred!</h1>
-                    <h2>Error Code: {errorFound.errorCode}</h2>
-                </div>
+                    <>
+                        <div className='error'>
+                            <h1>An error has occurred!</h1>
+                            <h2>Error Code: {errorFound.errorCode}</h2>
+                        </div>
+                    </>
                 ): null}
         </div>
     );
