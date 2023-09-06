@@ -22,10 +22,7 @@ const Home = () => {
   return (
     <>
         <Searchbar updateResultState={updateResultState}/>
-        <div>
-            {String(resultState)}
-        </div>
-      <VideoList resultState={resultState}/>
+        <VideoList resultState={resultState}/>
     </>
   );
 };

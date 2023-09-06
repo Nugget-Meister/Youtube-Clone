@@ -1,4 +1,26 @@
-.nav-box {
+.Navbar {
+    display: grid;
+}
+
+.Navbar h1 {
+    width: 350px;
+}
+
+.Navbar ul {
+    display: inline;
+    display: block;
+    list-style: none;
+}
+
+li {
+    display: block;
+    color: red;
+    float: left;
+    padding: 10px;
+}
+
+
+/* .nav-box {
     text-align: left;
     border: 1px solid gray;
     background-color: red;
@@ -63,7 +85,7 @@
     list-style: none;
     display: inline-flex;
     padding: 10px;
-  }
+  } */
 
   
 

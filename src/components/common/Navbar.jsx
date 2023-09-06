@@ -4,20 +4,16 @@ import "./Navbar.css"
 
 const Navbar = () => {
     return (
-        <div className="nav-box">
-          <header>
-            <ul className="nav-bar">
-              <li className="site-title">
-                <Link to="/"><h2>YouTube</h2></Link>
-              </li>
-              <li className="list-item">
-                <Link to="/">Home</Link>
-              </li>
-              <li className="list-item">
-                <Link to="/About">About</Link>
-              </li>
+        <div className="Navbar">
+            <h1>Tou<span>Yoube</span></h1>
+            <ul>
+                <li>
+                    <Link to="/">Home</Link>
+                </li>
+                <li>
+                    <Link to="/About">About Us</Link>
+                </li>
             </ul>
-          </header>
         </div>
       );
 }
