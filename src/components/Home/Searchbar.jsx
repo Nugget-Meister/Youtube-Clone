@@ -5,9 +5,8 @@ import { getSearchResults } from '../common/helper';
 
 
 const Searchbar = ({updateResultState}) => {
-
     const [ searchQuery, updateSearchQuery ] = useState('')
-
+    
     const handleSubmit = (e) => {
         e.preventDefault()
 
