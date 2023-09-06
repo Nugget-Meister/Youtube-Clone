@@ -5,7 +5,10 @@ import "/src/components/Home/Searchbar.css"
 
 
 const Searchbar = ({updateResultState}) => {
-    const [ searchQuery, updateSearchQuery ] = useState('')
+    const [ searchQuery, updateSearchQuery ] = useState({
+        search: "",
+        amount: "",
+    })
 
     const [ errorFound, updateErrorFound ] = useState({
         isError: false,
@@ -15,7 +18,7 @@ const Searchbar = ({updateResultState}) => {
     const handleSubmit = (e) => {
         e.preventDefault()
         if(updateResultState){
-            getSearchResults(searchQuery)
+            getSearchResults(searchQuery.search,searchQuery.amount)
             .then((response) => {
                 // console.log(response)
                 if(typeof response != "number") {
@@ -34,7 +37,10 @@ const Searchbar = ({updateResultState}) => {
     }
     
     const handleTextChange = (e) => {
-        updateSearchQuery(e.target.value)
+        updateSearchQuery({
+            ...searchQuery,
+            [e.target.id]: e.target.value
+        })
     }
 
     return (
@@ -42,10 +48,19 @@ const Searchbar = ({updateResultState}) => {
                 <form onSubmit={handleSubmit}>
                     <input 
                         type="text" 
-                        value={searchQuery}
+                        value={searchQuery.search}
                         onChange={handleTextChange}
+                        id='search'
                         placeholder='Search'
                         required/>
+                    <input 
+                        type="number" 
+                        value={searchQuery.amount}
+                        onChange={handleTextChange}
+                        id="amount" 
+                        min="4"
+                        max="8"
+                        />
                     <input type="submit" value="🔎"/>
                 </form>
                 <br />

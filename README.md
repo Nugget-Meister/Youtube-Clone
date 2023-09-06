@@ -15,3 +15,8 @@ This application is a YouTube Clone. Users are be able to see our clone of the o
 - Type in name and comment fields. (Do not leave blank)
 - Click on About to page to see devs who worked on this project.
 - Click on Home to return to original page with the searchbar.
+
+
+### Stretch Goals
+
+- Added the ability to change the amount of results shown from 4-8 
